@@ -18,7 +18,10 @@
         </Style>
         <Style x:Key="ButtonStyle">
             <Setter Property="Control.Background" Value="BlueViolet"/>
-
+            <Setter Property="Control.Width" Value="500"/>
+            <Setter Property="Control.Margin" Value="0,404,0,0"/>
+            <Setter Property="ItemsControl.Height" Value="20"/>
+            <Setter Property="ItemsControl.HorizontalAlignment" Value="Center"/>
         </Style>
     </Window.Resources>
     <Grid Style="{StaticResource VioletBackground}">
@@ -35,12 +38,8 @@
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Clear" 
-                HorizontalAlignment="Center"  
                 VerticalAlignment="Top"
                 Style="{StaticResource ButtonStyle}" 
-                Height="20" 
-                Margin="0,404,0,0" 
-                Width="500" Click="Button_Click_1"/>
+                Click="Button_Click_1"/>
     </Grid>
 </Window>
-
